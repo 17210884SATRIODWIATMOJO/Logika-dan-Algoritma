@@ -1,0 +1,57 @@
+import numpy as np
+
+nama_kelompok = [["Kelompok 1"]]
+nama = [["Mukhamad Rizqi", "Fajar Gunawan",
+         "Satrio Dwiatmojo", "Niken Ayu Febria Adha"]]
+kelas = [["17.1C.12"]]
+
+matriksA1 = int(input("Input matriks A: "))
+matriksA2 = int(input("Input matriks A: "))
+matriksA3 = int(input("Input matriks A: "))
+matriksA4 = int(input("Input matriks A: "))
+matriksA5 = int(input("Input matriks A: "))
+matriksA6 = int(input("Input matriks A: "))
+matriksA7 = int(input("Input matriks A: "))
+matriksA8 = int(input("Input matriks A: "))
+matriksA9 = int(input("Input matriks A: "))
+
+
+matriksB1 = int(input("Input matriks B: "))
+matriksB2 = int(input("Input matriks B: "))
+matriksB3 = int(input("Input matriks B: "))
+matriksB4 = int(input("Input matriks B: "))
+matriksB5 = int(input("Input matriks B: "))
+matriksB6 = int(input("Input matriks B: "))
+matriksB7 = int(input("Input matriks B: "))
+matriksB8 = int(input("Input matriks B: "))
+matriksB9 = int(input("Input matriks B: "))
+
+
+Matrix1 = np.array([[matriksA1, matriksA2, matriksA3], [
+                   matriksA4, matriksA5, matriksA6], [matriksA7, matriksA8, matriksA9]])
+Matrix2 = np.array([[matriksB1, matriksB2, matriksB3], [
+                   matriksB4, matriksB5, matriksB6], [matriksB7, matriksB8, matriksB9]])
+
+hasil = []
+for i in range(len(Matrix1)):
+    baris = []
+    for j in range(len(Matrix1[i])):
+        baris.append(Matrix1[i][j] + Matrix2[i][j])
+    hasil.append(baris)
+
+print("Matrix1")
+print(Matrix1)
+
+print("Matrix2")
+print(Matrix2)
+
+print("Hasil PENJUMLAHAN matriks adalah:")
+for baris in hasil:
+    print(baris)
+
+print("==============================")
+print("TUGAS PERTEMUAN 10")
+print("NAMA KELOMPOK   : ", nama_kelompok)
+print("NAMA ANGGOTA    : ", nama)
+print("KELAS           : ", kelas)
+print("==============================")
